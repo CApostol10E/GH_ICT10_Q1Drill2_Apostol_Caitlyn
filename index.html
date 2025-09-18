@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRILL 2: Working on Strings</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+<body>
+   <form>
+        <!-- Fixed IDs -->
+        <input type="text" id="name" placeholder="Enter your full name"><br>
+        <input type="number" id="age" placeholder="Enter your age"><br>
+
+        <label for="campus">Campus:</label>
+        <select id="campus">
+            <option>OBMC GH</option>
+            <option>OBMC STA ANA</option>
+            <option>OBMC LAS PINAS</option>
+            <option>OBMC ANGELES</option>
+            <option>OBMC FAIRVIEW</option>
+        </select><br><br>
+
+        <!-- Call the correct Python function -->
+        <input type="button" value="ENTER" py-click="collecting_data">
+    </form>
+
+    <!-- Fixed target div ID -->
+    <div id="output" style="margin-top:20px; white-space:pre-line; font-family:monospace;"></div>
+
+    <!-- File name must match exactly -->
+    <py-script src="main.py"></py-script>
+</body>
+</html>
